@@ -3,80 +3,78 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
 body {
-  background-color: #333333;
+  background-color: #fff;
   height: 100vh;
   font-family: "Space Mono";
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 375px;
 }
 
 header {
-  font-family: "Inconsolata";
+  font-family: Inconsolata;
+  font-style: normal;
+  font-weight: bold;
   font-size: 24px;
   line-height: 25px;
-  padding: 20px 0 0 24px;
   letter-spacing: -0.08em;
+  margin: 1.2rem 0 4rem 1.5rem;
 }
 
-.container {
-  background-color: #fff;
-  border-radius: 8px;
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
+header,
+button {
+  text-transform: uppercase;
 }
 
-.img-404 {
+.container .img-div img {
   display: block;
-  width: 89%;
-  margin: 60px auto;
+  width: 77%;
+  margin: auto;
+}
+
+.content {
+  margin: 3.75rem 1px 1.875rem 1.5rem;
 }
 
 .content h1 {
   font-size: 48px;
-  color: #333333;
-  padding-left: 24px;
-  letter-spacing: -0.035em;
   line-height: 71px;
-  margin-bottom: 30px;
-  font-weight: 700;
+  letter-spacing: -0.035em;
 }
 
 .content p {
-  font-weight: 400;
+  margin: 1.875rem 0 4.125rem 0;
   color: #4f4f4f;
-  width: 87%;
-  margin: auto;
-  font-size: 18px;
+  font-family: "Space Mono";
+  font-size: 1.125rem;
   line-height: 27px;
   letter-spacing: -0.035em;
 }
 
-.content button {
-  margin: 63px 0 0 24px;
-  color: #fff;
+button {
   background-color: #333333;
   border: none;
-  padding: 24px 43px;
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: -0.035em;
+  font-family: "Space Mono";
+  color: #fff;
+  font-size: 14px;
   line-height: 21px;
+  letter-spacing: -0.035em;
   text-transform: uppercase;
-  border-radius: 8px;
+  font-weight: bold;
+  padding: 1.5rem 2.6rem;
+  margin-bottom: 7rem;
 }
 
 footer {
-  position: fixed;
-  bottom: 24px;
-  width: 100%;
-  text-align: center;
-  color: #bdbdbd;
   font-family: "Montserrat";
+  color: #bdbdbd;
   font-size: 14px;
-}
-
-strong {
-  text-decoration: underline;
+  line-height: 17px;
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
